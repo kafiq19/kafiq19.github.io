@@ -1,0 +1,417 @@
+/*------------------------------------*\
+    #Footer
+\*------------------------------------*/
+/* Parallax Effect */
+#wrapperParallax {
+    position: relative;
+    z-index: 1060;
+    min-height: 100vh;
+}
+
+#footerParallax {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 991px) {
+    #wrapperParallax{
+        margin-bottom: 0 !important;
+    }
+    #footerParallax{
+        position: static;
+    }
+}
+
+
+.footer {
+    background-color: #222222;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    /* Footer Widgets */
+    .footer-widget {
+        padding-top: 100px;
+        padding-bottom: 84px;
+    }
+
+    .footer--widget-title {
+        h5 {
+            color: $color-white;
+            font-size: 15px;
+            font-weight: 800;
+            line-height: 1;
+            text-transform: capitalize;
+            margin-bottom: 36px;
+        }
+    }
+
+    .widget--content {
+        p {
+            color: #a5a5a5;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 25px;
+            margin-bottom: 25px;
+        }
+
+        img {
+            margin-bottom: 24px;
+        }
+    }
+
+    .widget--newsletter {
+        p {
+            font-size: 12px;
+            color: #a5a5a5;
+            margin-bottom: 21px;
+        }
+
+        form {
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        .form-control {
+            background-color: white;
+            border: none;
+            color: #757575;
+            font-size: 12px;
+            font-weight: 400;
+            height: 51px;
+            line-height: 50px;
+            margin-bottom: 0;
+            padding: 0 60px 0 20px;
+            text-transform: capitalize;
+            border-radius: 3px;
+        }
+
+        .form-control::-webkit-input-placeholder {
+            color: #757575;
+        }
+
+        .form-control:-moz-placeholder {
+            color: #757575;
+        }
+
+        .form-control::-moz-placeholder {
+            color: #757575;
+        }
+
+        .form-control:-ms-input-placeholder {
+            color: #757575;
+        }
+
+        button {
+            position: absolute;
+            top: 0;
+            right: -1px;
+            background-color: $color-theme;
+            border: none;
+            width: 51px;
+            height: 51px;
+            line-height: 51px;
+            color: $color-white;
+            font-size: 11px;
+            font-weight: 400;
+            cursor: pointer;
+            @include prefix(transition, .3s ease, webkit moz ms o);
+            border-radius: 0 3px 3px 0;
+
+            &:hover {
+                background-color: $color-white;
+                color: $color-heading;
+
+            }
+        }
+    }
+
+    .widget--links {
+        ul {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 0;
+            overflow: hidden;
+
+            li {
+                width: 50%;
+                float: left;
+
+                a {
+                    color: #9b9b9b;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 31px;
+                    text-transform: capitalize;
+                    font-family: $font-body;
+
+                    &:hover {
+                        color: $color-theme
+                    }
+                }
+            }
+        }
+
+    }
+
+    .widget--contact-info {
+        li {
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: capitalize;
+            font-family: $font-body;
+            line-height: 21px;
+            color: #a5a5a5;
+        }
+
+        li:last-child {
+            margin-top: 26px;
+        }
+
+    }
+}
+
+
+
+.footer--copyright {
+    border-top: 2px solid #2b2b2b;
+    padding: 33px 0;
+    font-size: 14px;
+    font-family: $font-heading;
+}
+
+.footer--copyright-links {
+    text-align: right;
+
+    li {
+        display: inline-block;
+
+        a {
+            display: block;
+            color: $color-body;
+            font-size: 13px;
+            line-height: 1;
+            display: block;
+            padding-left: 16px;
+            position: relative;
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+
+        a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 8px;
+            height: 10px;
+            width: 1px;
+            background-color: $color-body;
+        }
+    }
+
+    li:first-child a:before {
+        display: none;
+    }
+}
+
+
+
+.social--icons {
+    a {
+        color: $color-white;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1;
+        margin-right: 24px;
+        text-align: center;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    a:last-child {
+        margin-right: 0;
+    }
+
+    a.facebook:hover {
+        color: #3B5998;
+    }
+
+    a.twitter:hover {
+        color: #00ACEE;
+    }
+
+    a.linkedin:hover {
+        color: #0E76A8;
+    }
+
+    a.pinterest:hover {
+        color: #c8232c;
+    }
+}
+
+.footer--widget-recent {
+    .entry {
+        margin-bottom: 15px;
+
+        .entry--title {
+            a {
+                color: #7f7f7f;
+                font-size: 14px;
+                line-height: 23px;
+                display: block;
+                margin-bottom: 5px;
+
+                &:hover {
+                    color: $color-theme;
+                }
+            }
+        }
+
+        .entry--meta {
+            color: $color-body;
+            font-size: 12px;
+        }
+    }
+
+    .entry:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.widget-instagram {
+    a {
+        float: left;
+        display: inline-block;
+        margin: 2px;
+        position: relative;
+        width: 59px;
+        height: 59px;
+
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        &:hover .insta-hover {
+            @include prefix(transform, scale(1), webkit moz ms o);
+        }
+    }
+
+    .insta-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include prefix(transform, scale(0), webkit moz ms o);
+        @include prefix(transition, all 0.35s, webkit moz ms o);
+
+        i {
+            line-height: 59px;
+            display: block;
+            background-color: $color-theme;
+            color: #ffffff;
+            font-size: 11px;
+            text-align: center
+        }
+    }
+}
+
+
+.footer-light {
+    background-color: white;
+
+    .footer--widget-title {
+        h5 {
+            color: $color-heading;
+        }
+    }
+
+    .social--icons {
+        a {
+            color: $color-body;
+        }
+    }
+
+    .widget--newsletter {
+        .form-control {
+            border: 1px solid #eaeaea;
+        }
+
+        button:hover {
+            background-color: $color-heading;
+            color: $color-white;
+        }
+    }
+
+    .footer--copyright {
+        border-color: #eaeaea;
+    }
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .footer {
+        .footer-widget {
+            padding-top: 60px;
+            padding-bottom: 0;
+        }
+
+        .footer--widget {
+            margin-bottom: 30px;
+        }
+
+
+        .footer--widget-title {
+            h5 {
+                margin-bottom: 15px;
+            }
+
+        }
+
+
+        .widget--newsletter {
+            form {
+                max-width: 400px;
+            }
+
+        }
+
+        .pull-right {
+            float: none !important;
+        }
+
+    }
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footer {
+
+        .footer-widget {
+            padding-bottom: 40px;
+        }
+
+        .footer--widget {
+            margin-bottom: 20px;
+        }
+
+        .footer--widget-title {
+            h5 {
+                margin-bottom: 15px;
+            }
+
+        }
+
+
+    }
+
+}

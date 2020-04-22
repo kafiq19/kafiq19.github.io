@@ -1,0 +1,108 @@
+/*------------------------------------*\
+    #Contacts
+\*------------------------------------*/
+.contact {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    .contact--panel {
+        background-color: white;
+        border-radius: 6px;
+        padding: 90px 100px;
+
+        .heading {
+            margin-bottom: 60px;
+        }
+
+        textarea {
+            height: 122px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            box-shadow: 0px 9px 30px 0px rgba(40, 40, 40, 0.15);
+        }
+    }
+
+}
+
+.contact-2 {
+    .contact-container {
+        margin-top: -628px;
+    }
+
+    .contact--panel {
+        border-radius: 0;
+    }
+
+}
+
+.contact-3 {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .contact--panel {
+        padding: 0 50px;
+        border-radius: 0;
+        background-color: transparent;
+
+        .contact--icon {
+            font-size: 45px;
+            color: $color-theme;
+            line-height: 1;
+            margin-bottom: 24px;
+        }
+
+        h4 {
+            font-size: 18px;
+            line-height: 1;
+            margin-bottom: 19px;
+        }
+
+        p {
+            font-size: 13px;
+            line-height: 23px;
+            margin-bottom: 18px;
+        }
+
+        .btn {
+            box-shadow: none;
+        }
+    }
+
+}
+
+.contact-4 {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    .contact--panel {
+        padding: 0;
+    }
+}
+    /* Custom, iPhone Retina */
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .contact {
+            .contact--panel {
+                padding: 30px;
+            }
+        }
+
+        .contact-3 {
+            .contact--panel {
+                padding: 0 50px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    /* Tablets  */
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .contact-3 {
+            .contact--panel {
+                margin-bottom: 30px;
+                padding: 0;
+            }
+        }
+    }

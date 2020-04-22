@@ -1,0 +1,98 @@
+/*--------------------------------
+    #services
+---------------------------------*/
+.services {
+    .service-panel {
+        position: relative;
+        margin-bottom: 30px;
+
+        .service--img {
+            margin-bottom: 30px;
+            border-radius: 6px;
+            overflow: hidden;
+            @include prefix(transition, all .2s linear, webkit moz ms o);
+
+            &:hover {
+                box-shadow: 0px 9px 30px 0px rgba(40, 40, 40, 0.15);
+                @include prefix(transform, translateY(-10px), webkit moz ms o);
+            }
+        }
+
+        .service--content {
+            h4 {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 18px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .service--more {
+            line-height: 1;
+
+            a {
+                color: #333333;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 1;
+                text-transform: capitalize;
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+
+                i {
+                    margin-right: 6px;
+                    @include prefix(transition, all .3s linear, webkit moz ms o);
+
+                }
+
+                span {
+                    display: inline-block;
+                    @include prefix(transform, translateX(33px), webkit moz ms o);
+                    @include prefix(transition, all .2s linear, webkit moz ms o);
+                }
+            }
+        }
+
+
+        &:hover .service--more {
+            a {
+                color: $color-theme;
+            }
+
+            span {
+                @include prefix(transform, translateX(0), webkit moz ms o);
+
+            }
+        }
+
+    }
+
+}
+
+ 
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .services{
+        .service-panel{
+            margin-right:auto;
+            margin-left:auto;
+            max-width: 370px;
+            text-align: center;
+        }
+    }
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+ 
+}
+ 

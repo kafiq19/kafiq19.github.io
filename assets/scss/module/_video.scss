@@ -1,0 +1,105 @@
+/*------------------------------------*\
+    #Video
+\*------------------------------------*/
+.video--button {
+    position: relative;
+
+    .popup-video {
+        text-align: center;
+        display: inline-block;
+        position: relative;
+
+        span {
+            position: relative;
+            width: 88px;
+            height: 88px;
+        }
+
+        span:before {
+            position: absolute;
+            left: -4px;
+            top: -37px;
+            content: "";
+            width: 88px;
+            height: 88px;
+            border: 2px solid $color-white;
+            border-radius: 50%;
+            opacity: 1;
+            animation: pulse 1s infinite linear;
+            animation-delay: .5s
+        }
+
+        i {
+            font-size: 18px;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            background-color: $color-white;
+            color: $color-heading;
+            position: relative;
+            display: inline-block;
+
+            &:hover {
+                color: $color-theme;
+            }
+        }
+
+        h6 {
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+            padding-top: 27px;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+
+        &:hover {
+            animation: none;
+        }
+    }
+}
+
+
+/* video #1 */
+.video-1 {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .video--button {
+        height: 720px;
+    }
+}
+
+
+@-webkit-keyframes pulse {
+    0% {
+        @include prefix(transform, scale(1), webkit moz ms o);
+    }
+
+    100% {
+        @include prefix(transform, scale(1.2), webkit moz ms o);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        @include prefix(transform, scale(1), webkit moz ms o);
+    }
+
+    100% {
+        @include prefix(transform, scale(1.2), webkit moz ms o);
+        opacity: 0;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .video-1 {
+
+        .video--button {
+            height: 400px;
+        }
+    }
+}

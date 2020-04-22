@@ -1,0 +1,224 @@
+.features {
+    .feature-panel {
+        position: relative;
+        margin-bottom: 50px;
+
+        .feature--img {
+            margin-bottom: 30px;
+            border-radius: 6px;
+            overflow: hidden;
+            @include prefix(transition, all .2s linear, webkit moz ms o);
+
+            &:hover {
+                box-shadow: 0px 9px 30px 0px rgba(40, 40, 40, 0.15);
+                @include prefix(transform, translateY(-10px), webkit moz ms o);
+            }
+        }
+
+        .feature--icon {
+            font-size: 50px;
+            line-height: 1;
+            color: $color-theme;
+            margin-bottom: 24px;
+        }
+
+        .feature--content {
+            h4 {
+                font-size: 20px;
+                line-height: 29px;
+                font-weight: 700;
+                margin-bottom: 18px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .feature--more {
+            line-height: 1;
+
+            a {
+                color: #333333;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 1;
+                text-transform: capitalize;
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                padding-left: 20px;
+
+                i {
+                    margin-right: 6px;
+                    position: absolute;
+                    left: 0;
+                    background: $color-white;
+                    z-index: 1;
+                    @include prefix(transition, all .3s linear, webkit moz ms o);
+
+                }
+
+                span {
+                    display: inline-block;
+                    @include prefix(transform, translateX(-60px), webkit moz ms o);
+                    @include prefix(transition, all 300ms linear, webkit moz ms o);
+                }
+            }
+        }
+
+
+        &:hover .feature--more {
+            a {
+                color: $color-theme;
+            }
+
+            span {
+                @include prefix(transform, translateX(0), webkit moz ms o);
+
+            }
+        }
+
+    }
+
+}
+
+
+.features-1 {
+    .feature-panel {
+        padding: 70px 20px 56px 40px;
+        border-radius: 6px;
+        box-shadow: 0px 9px 20px 0px rgba(40, 40, 40, 0.1);
+        @include prefix(transition, all 300ms linear 0ms, webkit moz ms o);
+
+        &:hover {
+            box-shadow: 0px 9px 30px 0px rgba(40, 40, 40, 0.15);
+            @include prefix(transform, translateY(-10px), webkit moz ms o);
+        }
+
+    }
+}
+
+
+.features-2 {
+    overflow: visible;
+
+    .col-content {
+        padding: 130px 100px 70px 15px;
+    }
+
+    .heading {
+        margin-bottom: 44px;
+
+        .heading--title {
+            color: $color-white;
+        }
+
+        .heading--desc {
+            font-size: 15px;
+            color: $color-white;
+            margin-bottom: 0;
+        }
+    }
+
+    .feature-panel {
+        margin-bottom: 40px;
+
+        .feature--icon {
+            font-size: 40px;
+            color: $color-white;
+        }
+
+        .feature--content {
+
+            h4 {
+                font-size: 18px;
+            }
+
+            h4,
+            p {
+                color: $color-white;
+            }
+        }
+
+
+    }
+
+    .mockup--img {
+        position: absolute;
+        bottom: -275px;
+        right: -50px;
+    }
+
+}
+
+.features-5 {
+    .feature-panel {
+        padding: 70px 20px 56px 20px;
+        border-radius: 6px;
+        @include prefix(transition, all 300ms linear 0ms, webkit moz ms o);
+
+        &:hover {
+            @include prefix(box-shadow, 0px 9px 30px 0px rgba(40, 40, 40, 0.15), moz webkit);
+        }
+
+        &.active {
+            @include prefix(box-shadow, 0px 9px 30px 0px rgba(40, 40, 40, 0.15), moz webkit);
+        }
+    }
+}
+
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .feature-panel{
+        max-width:370px;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    .features-2 {
+        .mockup--img {
+            bottom: 0;
+            position: relative;
+            right:0;
+            margin-top:30px;
+
+            img{
+                max-width: 100%;
+                height:auto;
+            }
+        }
+
+    }
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .features-2 {
+        .col-content {
+            padding: 50px;
+        }
+
+        .mockup--img {
+            bottom: 0;
+            position: relative;
+            right:0;
+            margin-top:30px;
+
+            img{
+                max-width: 100%;
+                height:auto;
+            }
+        }
+
+    }
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}

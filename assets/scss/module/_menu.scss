@@ -1,0 +1,164 @@
+/*------------------------------------*\
+    #Menu
+\*------------------------------------*/
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	min-height: 100px;
+	border: none;
+	z-index: 1030;
+	padding: 0;
+	@include transition(all 300ms ease-in-out);
+
+	&.navbar-bordered {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.navbar-nav {
+		>li {
+			margin-right: 30px;
+			position: relative;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			>a {
+				font-size: 14px;
+				text-transform: capitalize;
+				font-weight: 700;
+				line-height: 100px;
+				color: $color-white;
+				padding: 0;
+				position: relative;
+			}
+
+			&.active>a,
+			>a:focus,
+			>a:hover {
+				background-color: transparent;
+				color: $color-white
+			}
+
+		}
+	}
+	
+	.navbar-brand {
+		margin-right: 0;
+	}
+
+	&.affix {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		background: $color-white;
+		@include prefix(box-shadow, 0 2px 4px rgba(3, 27, 78, .1), moz webkit);
+
+		.navbar-brand {
+			.logo-dark {
+				display: inline-block;
+			}
+
+			.logo-light {
+				display: none;
+			}
+		}
+
+		.navbar-nav>li>a {
+			color: $color-heading;
+		}
+
+		.navbar-nav>li>.menu-item::before,
+		.navbar-nav>li>.menu-item:hover::before {
+			background-color: $color-heading;
+		}
+
+	}
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar-nav>li.active>ul {
+	margin-top: 0;
+}
+
+/* Menu Level #1 */
+.dropdown-toggle::after {
+	display: none;
+}
+
+.navbar-nav>li>.menu-item::before,
+.navbar-nav>li>.menu-item:hover::before {
+	position: absolute;
+	top: 22px;
+	left: 0;
+	margin: auto;
+	width: 0;
+	height: 2px;
+	background: $color-white;
+	content: '';
+	@include transition(all 0.4s linear);
+}
+
+.navbar-nav>li>.menu-item:hover::before,
+.navbar-nav>li.active>.menu-item:before {
+	width: 20px;
+}
+
+li.has-dropdown>ul.dropdown-menu>li.dropdown-submenu>a:before,
+ul.dropdown-menu>li.has-dropdown>a:before {
+	font-family: fontawesome;
+	content: "\f105";
+	font-size: 13px;
+	position: absolute;
+	right: 25px;
+}
+
+/* Menu Levels */
+
+.dropdown-menu {
+	background-color: transparent;
+	position: relative;
+	width: 100%;
+	border: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.navbar.navbar-dark {
+	.module .module-icon i {
+		color: $color-heading;
+	}
+
+	.navbar-nav {
+		>li {
+
+			>a,
+			&.active>.menu-item,
+			>a:hover {
+				color: $color-heading;
+			}
+
+			>.menu-item:hover::before,
+			&.active>.menu-item:before {
+				background-color: $color-heading;
+			}
+		}
+	}
+
+
+
+}
+
+/* Header With Top Bar */
+
+.header-topbar {
+	height: 150px;
+}

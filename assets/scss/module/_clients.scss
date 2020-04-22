@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    #Client
+\*------------------------------------*/
+
+.clients {
+    .client {
+        position: relative;
+        line-height: 50px;
+        @include prefix(transition, .3s ease, webkit moz ms o);
+
+        img {
+            max-width: 100%;
+            width: auto !important;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+    }
+}
+
+/* Client #1 */
+
+.clients-1 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* Client #2 */
+
+.clients-2 {
+    border-top: 1px solid #eaeaea;
+}
+
+@media only screen and (max-width: 991px) {
+    .client {
+        margin-bottom: 20px;
+    }
+}

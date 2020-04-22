@@ -1,0 +1,104 @@
+/*--------------------------------
+    #pricing
+---------------------------------*/
+.pricing {
+    padding-top: 208px;
+    padding-bottom: 155px;
+    .heading{
+        margin-top: 110px;
+    }
+    .pricing-panel {
+        background-color: #fff;
+        padding: 50px;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0px 2px 15px 0px rgba(40, 40, 40, 0.06);
+
+
+        .pricing--heading {
+            h4 {
+                font-size: 18px;
+                line-height: 1;
+                color: $color-theme;
+                margin-bottom: 13px;
+            }
+
+            .pricing--desc {
+                font-size: 12px;
+                color: #a5a5a5;
+                line-height: 1;
+                margin-bottom: 38px;
+            }
+
+            p {
+                font-family: $font-heading;
+                font-size: 70px;
+                font-weight: 700;
+                color: $color-heading;
+                line-height: 1;
+
+                .currency {
+                    font-size: 20px;
+                }
+
+                .time {
+                    display: block;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .pricing--body {
+            padding: 15px 0;
+
+            li {
+                font-size: 13px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    .pricing-active {
+        position: relative;
+        z-index: 2;
+        @include prefix(transform, scale(1, 1.1), webkit moz ms o);
+
+        .btn {
+            box-shadow: 0px 9px 30px 0px rgba(40, 40, 40, 0.15);
+        }
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .pricing {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        .heading{
+            margin-top: 0;
+        }
+        .pricing-panel {
+            max-width: 400px;
+            margin: 0 auto 30px;
+        }
+
+        .pricing-active {
+            @include prefix(transform, scale(1, 1), webkit moz ms o);
+        }
+    }
+}
+
+/* Tablets */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .pricing {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .heading{
+            margin-top: 0;
+        }
+   
+    }
+}
