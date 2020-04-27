@@ -8290,3 +8290,13 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   padding: 3px 8px;
   border-radius: 3px;
 }
+
+@media only screen and (max-width: 768px) {
+  #first {
+    order: 2;
+  }
+  #second {
+    order: 1;
+  }
+
+}
