@@ -3430,7 +3430,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   opacity: 1;
   visibility: visible;
   display: block;
-  overflow-x: hidden;
+  overflow-x: visible;
   -webkit-transition: all 0.35s linear;
   -moz-transition: all 0.35s linear;
   -ms-transition: all 0.35s linear;
@@ -3453,7 +3453,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
 }
 .module-sidearea .module-sidearea-wrap .sidearea-header p {
   font-family: "Poppins", sans-serif;
-  color: #a5a5a5;
+  color: #282828;
   font-size: 13px;
   font-weight: 400;
   line-height: 25px;
@@ -6661,7 +6661,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   color: #ffffff;
 }
 .features-2 .heading .heading--desc {
-  font-size: 15px;
+  font-size: 20px;
   color: #ffffff;
   margin-bottom: 0;
 }
@@ -6670,7 +6670,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
 }
 .features-2 .feature-panel .feature--icon {
   font-size: 40px;
-  color: #ffffff;
+  color: #f2b404;
 }
 .features-2 .feature-panel .feature--content h4 {
   font-size: 18px;
@@ -6996,7 +6996,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
 .contact .contact--panel {
   background-color: white;
   border-radius: 6px;
-  padding: 90px 100px;
+  padding: 90px 40px;
 }
 .contact .contact--panel .heading {
   margin-bottom: 60px;
