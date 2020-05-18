@@ -1,0 +1,12 @@
+When making changes:
+
+- if changes to header or footer, update on all pages
+- update hyperlinks
+- update google sitemap
+
+if adding blog:
+- update headers and side menu
+- update main page blog section
+- update blog-main
+- if necessary, move paginate blogs (3 per page, add page if necessary)
+=== if adding a new page, add new page to main and update active highlight and next, previous links

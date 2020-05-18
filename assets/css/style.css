@@ -8283,7 +8283,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
 .custom-counter li::before {
   content: counter(step-counter);
   margin-right: 5px;
-  font-size: 80%;
+  font-size: 100%;
   background-color: #f2b404;
   color: white;
   font-weight: bold;
@@ -8291,12 +8291,11 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   border-radius: 3px;
 }
 
-@media only screen and (max-width: 768px) {
-  #first {
-    order: 2;
-  }
-  #second {
-    order: 1;
-  }
-
+img.image-center {
+  display: block;
+  margin: 0 auto;
 }
+
+@media only screen and max-width: 991px {
+  .navbar.navbar-light .navbar-nav {
+    data-toggle: disabled;
