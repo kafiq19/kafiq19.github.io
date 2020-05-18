@@ -82,24 +82,21 @@
     <!-- li end -->
     <!-- company Menu-->
     <li class="has-dropdown">
-        <a href="/simhalabs.html#features2" data-toggle="disabled" class="dropdown-toggle menu-item">Company</a>
+        <a href="/simhalabs.html#features2" data-toggle="dropdown" class="dropdown-toggle menu-item">Company</a>
     </li>
     <!-- li end -->
     <!-- Blog Menu-->
     <li class="has-dropdown">
-        <a href="/simhalabs.html#blog" class="dropdown-toggle menu-item">Blog</a>
+        <a href="#blog" data-toggle="disabled" class="dropdown-toggle menu-item">Blog</a>
         <ul class="dropdown-menu">
             <li>
-                <a href="/simhalabs.html">blog title aa</a>
+                <a href="blog-articles/blog-jan20-20.html">Decision Making for..</a>
             </li>
             <li>
-                <a href="/simhalabs.html">blog title bb</a>
+                <a href="blog-articles/blog-feb22-20.html">What UX Testing Tool..</a>
             </li>
             <li>
-                <a href="/simhalabs.html">blog title cc</a>
-            </li>
-            <li>
-                <a href="/simhalabs.html">blog title dd</a>
+                <a href="blog-articles/blog-mar24-20.html">Personal Biases that..</a>
             </li>
         </ul>
     </li>
@@ -189,7 +186,7 @@
             <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
                 <div class="title  text-center">
                     <div class="title--heading">
-                        <h1>Our Blog</h1>
+                        <h1>The Mission Success Blog</h1>
                     </div>
                     <div class="clearfix"></div>
                     <ol class="breadcrumb d-flex justify-content-center">
@@ -219,15 +216,15 @@
                             <a href="#">Tools</a>
                             <a href="#">Tips</a>
                         </div>
-                        <div class="entry--date">Feb 22, 2020</div>
+                        <div class="entry--date">Jan 20, 2020</div>
                         <div class="entry--meta-comment">Comments: <span class="color-theme">2</span></div>
                         <div class="entry--title">
-                            <h4><a href="#">What UX Testing Tool Should You Use?</a></h4>
+                            <h4><a href="#">Decision Making for Building Product</a></h4>
                         </div>
                     </div><!-- .entry-meta-container end -->
                     <div class="entry--img">
                         <a href="#">
-                            <img src="/assets/images/blog/standard/feb22-20.jpg" alt="entry image" />
+                            <img src="/assets/images/blog/standard/jan20-20.jpg" alt="entry image" />
                         </a>
                     </div>
                     <div class="entry--content clearfix">
@@ -307,24 +304,25 @@
                 </div>
                 <!-- .entry-comments end -->
 
-                <div class="entry-widget entry-add-comment mb-0 clearfix">
+                    <div class="entry-widget entry-add-comment mb-0 clearfix">
                     <div class="entry-widget-title">
                         <h4>Leave A Reply</h4>
                     </div>
                     <div class="entry-widget-content">
-                        <form id="post-comment" class="mb-0">
+                        <form id="post-comment" class="mb-0" method="post" action="/assets/php/blog-contact.php">
                             <div class="row">
                                 <div class="col-sm-12 col-md-6  col-lg-6">
-                                    <input type="text" class="form-control" placeholder="Name:" />
+                                    <input type="text" class="form-control" name="contact-name" placeholder="Name:" />
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <input type="email" class="form-control" placeholder="Email:" />
+                                    <input type="email" class="form-control" name="contact-email" placeholder="Email:" />
+                                    <input type="hidden" name="current_url" value="jan20-20" />
                                 </div>
                                 <div class="col-sm-12 col-md-12 col-lg-12">
-                                    <textarea class="form-control mb-40" rows="2" placeholder="Comment:"></textarea>
+                                    <textarea class="form-control mb-40" rows="2" name="contact-message" placeholder="Comment:"></textarea>
                                 </div>
                                 <div class="col-sm-12 col-md-12 col-lg-12">
-                                    <button type="submit" class="btn btn--primary btn--inverse">Submit Comment</button>
+                                    <button type="submit" value="Send" class="btn btn--primary btn--inverse">Submit Comment</button>
                                 </div>
                             </div>
                         </form>
