@@ -151,10 +151,10 @@ html {
 
 body {
   background-color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #9b9b9b;
+  color: #5a5a5a;
   margin: 0;
 }
 
@@ -223,7 +223,7 @@ h4,
 h5,
 h6 {
   color: #282828;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 800;
   margin: 0 0 28px;
   line-height: 1;
@@ -260,7 +260,7 @@ h6 {
 }
 
 p {
-  color: #9b9b9b;
+  color: #5a5a5a;
   font-size: 13px;
   font-weight: 400;
   line-height: 22px;
@@ -359,7 +359,7 @@ p {
 }
 
 .font-body {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
 }
 
 .font-18 {
@@ -1170,7 +1170,7 @@ blockquot {
 }
 
 .quote-author {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   display: block;
   font-size: 13px;
   font-style: normal;
@@ -1397,7 +1397,7 @@ blockquot {
     #BUTTONS
 \*------------------------------------*/
 .btn {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   position: relative;
   z-index: 2;
   font-size: 13px;
@@ -1429,7 +1429,7 @@ blockquot {
 /* Button Primary */
 .btn--primary {
   background-color: #f2b404;
-  color: #ffffff;
+  color: #282828;
   border: 2px solid #f2b404;
 }
 
@@ -2745,7 +2745,7 @@ body.modal-open .affix {
   margin-right: 0;
 }
 .navbar .navbar-nav > li > a {
-  font-size: 14px;
+  font-size: 16px;
   text-transform: capitalize;
   font-weight: 700;
   line-height: 100px;
@@ -3084,7 +3084,7 @@ ul.mega-menu > li {
 
   ul.dropdown-menu li a,
 ul.mega-menu li ul li a {
-    font-family: "Poppins", sans-serif;
+    font-family: "SF Pro Display", sans-serif;
     line-height: 40px;
     color: #9b9b9b;
     padding: 0;
@@ -3420,7 +3420,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
 /* Module SideArea*/
 .module-sidearea .module-sidearea-wrap {
   background-color: #ffffff;
-  padding: 90px 40px 40px 40px;
+  padding: 40px 40px 40px 40px;
   height: 100%;
   width: 370px;
   position: fixed;
@@ -3452,7 +3452,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   display: block;
 }
 .module-sidearea .module-sidearea-wrap .sidearea-header p {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   color: #282828;
   font-size: 13px;
   font-weight: 400;
@@ -3614,7 +3614,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   margin-bottom: 8px;
 }
 .cart-box .cart-overview p {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   color: #f2b404;
   font-size: 14px;
   line-height: 20px;
@@ -3917,7 +3917,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   line-height: 50px;
   margin-right: 30px;
   display: inline-block;
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
 }
 
 .top-bar .contact-info i {
@@ -4444,21 +4444,21 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
     #Heading
 \*------------------------------------*/
 .heading .heading--subtitle {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   color: #f2b404;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 18px;
 }
 .heading .heading--title {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "century gothic", sans-serif;
   font-size: 36px;
   line-height: 49px;
   margin-bottom: 20px;
 }
 .heading .heading--desc {
-  color: #a5a5a5;
+  color: #5a5a5a;
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
@@ -4605,7 +4605,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
 }
 .slider .slider--desc {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   line-height: 24px;
   padding: 0 90px;
@@ -4817,7 +4817,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
 .blog-entry .entry--meta a {
   position: relative;
   padding-left: 5px;
-  color: #ffffff;
+  color: black;
   display: inline-block;
 }
 .blog-entry .entry--meta a:before {
@@ -5019,7 +5019,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   margin-bottom: 35px;
 }
 .blog-single .entry-widget .entry-widget-title h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
@@ -5110,7 +5110,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
 .blog-single ul.comments-list .comment-body .comment .date {
   font-family: "Nunito Sans", sans-serif;
   color: #616161;
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 26px;
@@ -6112,7 +6112,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
 }
 
 .widget .widget--title h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   color: #282828;
   font-size: 13px;
   font-weight: 700;
@@ -6580,7 +6580,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   transform: translateY(-10px);
 }
 .features .feature-panel .feature--icon {
-  font-size: 50px;
+  /*font-size: 50px;*/
   line-height: 1;
   color: #f2b404;
   margin-bottom: 24px;
@@ -6592,10 +6592,12 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   margin-bottom: 18px;
 }
 .features .feature-panel .feature--content p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   margin-bottom: 20px;
+  color: #5a5a5a;
 }
+
 .features .feature-panel .feature--more {
   line-height: 1;
 }
@@ -6673,7 +6675,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   color: #f2b404;
 }
 .features-2 .feature-panel .feature--content h4 {
-  font-size: 18px;
+  font-size: 20px;
 }
 .features-2 .feature-panel .feature--content h4,
 .features-2 .feature-panel .feature--content p {
@@ -6918,7 +6920,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   margin-bottom: 10px;
 }
 .team .member .member-info h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   color: #9b9b9b;
   font-size: 12px;
   font-weight: 400;
@@ -7402,7 +7404,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
 }
 .counter .count-box .count-title {
   color: #282828;
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-size: 13px;
   font-weight: 700;
   line-height: 1;
@@ -7783,7 +7785,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   margin-bottom: 40px;
 }
 .landing-hero h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   color: #ffffff;
   font-size: 60px;
   font-weight: 700;
@@ -7791,7 +7793,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   margin-bottom: 40px;
 }
 .landing-hero p {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   color: #ffffff;
   font-size: 15px;
   font-weight: 600;
@@ -7842,7 +7844,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   margin-bottom: 40px;
 }
 .landing-action p {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   color: #ffffff;
   font-size: 15px;
   font-weight: 600;
@@ -7850,7 +7852,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   margin-bottom: 10px;
 }
 .landing-action h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   color: #ffffff;
   font-size: 60px;
   font-weight: 700;
@@ -7893,7 +7895,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
 .landing-banners .counter p {
   font-size: 30px;
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 500;
 }
 .landing-banners .counter h5 {
@@ -8037,7 +8039,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   width: 51px;
   height: 51px;
   line-height: 51px;
-  color: #ffffff;
+  color: black;
   font-size: 11px;
   font-weight: 400;
   cursor: pointer;
@@ -8068,7 +8070,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   font-weight: 400;
   line-height: 31px;
   text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
 }
 .footer .widget--links ul li a:hover {
   color: #f2b404;
@@ -8077,7 +8079,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   font-size: 12px;
   font-weight: 400;
   text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   line-height: 21px;
   color: #a5a5a5;
 }
@@ -8285,7 +8287,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   margin-right: 5px;
   font-size: 100%;
   background-color: #f2b404;
-  color: white;
+  color: black;
   font-weight: bold;
   padding: 3px 8px;
   border-radius: 3px;
@@ -8299,3 +8301,11 @@ img.image-center {
 @media only screen and max-width: 991px {
   .navbar.navbar-light .navbar-nav {
     data-toggle: disabled;
+}}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-65 { font-size: 65px; }
+
