@@ -4457,6 +4457,7 @@ li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > ul.dropdown-menu {
   line-height: 49px;
   margin-bottom: 20px;
 }
+
 .heading .heading--desc {
   color: #5a5a5a;
   font-size: 16px;
@@ -8308,4 +8309,70 @@ img.image-center {
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 .material-icons.md-65 { font-size: 65px; }
+
+/*Text Rotator*/
+/*-->Vertical Sliding*/
+.slidingVertical{
+  display: inline;
+  text-indent: 8px;
+}
+.slidingVertical span{
+  animation: topToBottom 12.5s linear infinite 0s;
+  -ms-animation: topToBottom 12.5s linear infinite 0s;
+  -webkit-animation: topToBottom 12.5s linear infinite 0s;
+  color: #f2b404;
+  text-shadow: -2px 2px 0 rgba(0, 0, 0, .4);
+  opacity: 0;
+  overflow: visible;
+  position: absolute;
+}
+.slidingVertical span:nth-child(2){
+  animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+}
+.slidingVertical span:nth-child(3){
+  animation-delay: 5s;
+  -ms-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+}
+.slidingVertical span:nth-child(4){
+  animation-delay: 7.5s;
+  -ms-animation-delay: 7.5s;
+  -webkit-animation-delay: 7.5s;
+}
+.slidingVertical span:nth-child(5){
+  animation-delay: 10s;
+  -ms-animation-delay: 10s;
+  -webkit-animation-delay: 10s;
+}
+
+/*topToBottom Animation*/
+@-moz-keyframes topToBottom{
+  0% { opacity: 0; }
+  5% { opacity: 0; -moz-transform: translateY(-50px); }
+  10% { opacity: 1; -moz-transform: translateY(0px); }
+  25% { opacity: 1; -moz-transform: translateY(0px); }
+  30% { opacity: 0; -moz-transform: translateY(50px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-webkit-keyframes topToBottom{
+  0% { opacity: 0; }
+  5% { opacity: 0; -webkit-transform: translateY(-50px); }
+  10% { opacity: 1; -webkit-transform: translateY(0px); }
+  25% { opacity: 1; -webkit-transform: translateY(0px); }
+  30% { opacity: 0; -webkit-transform: translateY(50px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-ms-keyframes topToBottom{
+  0% { opacity: 0; }
+  5% { opacity: 0; -ms-transform: translateY(-50px); }
+  10% { opacity: 1; -ms-transform: translateY(0px); }
+  25% { opacity: 1; -ms-transform: translateY(0px); }
+  30% { opacity: 0; -ms-transform: translateY(50px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
 
