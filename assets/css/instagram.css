@@ -1,0 +1,103 @@
+body {
+    background: white;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+img {
+    border-radius: 10%;
+  }
+
+.profile-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    height: auto;
+    max-width: 400px;
+  }
+
+.profile-name {
+      text-align: center;
+      padding: 30px;
+      font-size: 17px;
+  }
+
+.links {
+      text-align: center;
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid black;
+      border-width: 2px;
+      width: 290px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 40px;
+  }
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: color 1s; 
+}
+
+
+a:hover {
+    color: #000;
+    background: #f2b404;
+}
+
+h2 {
+  color: #f2b404;
+  text-align: center;
+}
+
+
+.channels {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.99;
+}
+
+/* Set a specific color for each brand */
+
+/* LinkedIN */
+.fa-linkedin:hover {
+  background: #fff;
+  color: #0e76a8;
+}
+
+/* Facebook */
+.fa-facebook:hover {
+  background: #fff;
+  color: #3B5998;
+}
+
+/* Twitter */
+.fa-twitter:hover {
+  background: #fff;
+  color: #55ACEE;
+}
+
+/* Instagram */
+.fa-instagram:hover {
+  background: #fff;
+  color: #C13584;
+}
