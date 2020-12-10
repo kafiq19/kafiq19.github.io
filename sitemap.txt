@@ -3,11 +3,6 @@ http://simhalabs.com/index.html
 http://simhalabs.com/services-value-perception.html
 http://simhalabs.com/services-user-testing.html
 http://simhalabs.com/services-training-workshops.html
-http://simhalabs.com/services-opportunity-identification.html
+http://simhalabs.com/services-opportunity-discovery.html
 http://simhalabs.com/404.html
-http://simhalabs.com/coming-soon.html
-http://simhalabs.com/blog-main.html
-http://simhalabs.com/blog-2.html
-http://simhalabs.com/blog-articles/blog-feb22-20.html
-http://simhalabs.com/blog-articles/blog-mar24-20.html
-http://simhalabs.com/blog-articles/blog-jan20-20.html
+http://simhalabs.com/blog
